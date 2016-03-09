@@ -4,6 +4,17 @@ Magic Search Widget
 
 This is an AngularJS widget that provides a UI for faceted and text search.
 
+Install with Bower
+------------------
+Add magic-search to your project using bower install. To save into your bower.json file append --save to the command.
+
+::
+    $ bower install angular-magic-search
+
+Add magic-search as a dependency on your Angular JS module.
+
+::
+    angular.module('myModule', ['MagicSearch']);
 
 Sass/Compass Setup
 ------------------
@@ -24,12 +35,12 @@ Grunt - JavaScript Task Manager
 Grunt Setup
 -----------
 * At home directory `./magic-search`
-* Install npm if missing: 
+* Install npm if missing:
 ::
 
     yum install -y npm
 
-* Run 
+* Run
 ::
 
     npm install
@@ -71,13 +82,13 @@ edit package.json to increment version
     grunt release
     git submodule foreach git push origin $branch
     git push origin $branch
-    
+
 Then, push tag
 ::
 
     git submodule foreach git push origin <version#>
     git push origin <version#>
-    
+
 
 Testing
 =======
@@ -96,4 +107,3 @@ There is not automated testing in place, but here are some functional tests that
  * verify that at any time, if you've selected a partial facet or option that pressing <esc> will clear that selection.
  * verify that if focus is on the input field without a facet menu that pressing <space> will show the facet menu.
  * select multiple search facets and save the URL. Verify that pasting that URL into a new tab will restore the same view (except for text facets).
-
