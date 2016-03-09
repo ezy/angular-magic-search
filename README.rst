@@ -6,14 +6,16 @@ This is an AngularJS widget that provides a UI for faceted and text search.
 
 Install with Bower
 ------------------
-Add magic-search to your project using bower install. To save into your bower.json file append --save to the command.
+Add magic-search to your project using bower install. To save into your bower.json file append --save to the command below.
 
 ::
+
     $ bower install angular-magic-search
 
 Add magic-search as a dependency on your Angular JS module.
 
 ::
+
     angular.module('myModule', ['MagicSearch']);
 
 Sass/Compass Setup
