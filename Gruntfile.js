@@ -36,8 +36,8 @@ module.exports = function(grunt) {
                   mangle: false
               },
               files: {
-                  'dist/magic_search.min.js': ['src/magic_search.js'],
-                  'dist/magic_search_bootstrap.min.js': ['src/magic_search_bootstrap.js']
+                  'dist/magic-search.min.js': ['src/magic-search.js'],
+                  'dist/magic-search-bootstrap.min.js': ['src/magic-search-bootstrap.js']
               }
           }
       },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  
+
   grunt.registerTask('dist', ['compass', 'copy', 'uglify']);
   grunt.registerTask('default', ['dist']);
 
@@ -110,5 +110,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('release', 'build and push to the bower component repo',
                      ['release-prepare', 'dist', 'release-commit']);
-  
+
 };
