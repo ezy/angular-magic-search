@@ -36,8 +36,8 @@ module.exports = function(grunt) {
                   mangle: false
               },
               files: {
-                  'dist/magic-search.min.js': ['src/magic-search.js'],
-                  'dist/magic-search-bootstrap.min.js': ['src/magic-search-bootstrap.js']
+                  'dist/angular-magic-search.min.js': ['src/angular-magic-search.js'],
+                  'dist/angular-magic-search-bootstrap.min.js': ['src/angular-magic-search-bootstrap.js']
               }
           }
       },
